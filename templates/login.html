@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Skillia</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+<div class="auth-card">
+
+<h1>Skillia</h1>
+
+<p>
+Sua ponte para o mercado tech.
+</p>
+
+<form
+action="/login"
+method="POST">
+
+<input
+type="email"
+name="email"
+placeholder="Seu email"
+required>
+
+<input
+type="password"
+name="password"
+placeholder="Sua senha"
+required>
+
+<button>
+Entrar
+</button>
+
+</form>
+
+<a href="/register">
+Criar conta
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

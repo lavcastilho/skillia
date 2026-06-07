@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.html": "jinja-html"
+    },
+
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    },
+
+    "css.lint.unknownAtRules": "ignore",
+    "css.lint.vendorPrefix": "ignore",
+
+    "html.validate.styles": false
+}

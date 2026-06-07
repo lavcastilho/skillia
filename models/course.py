@@ -1,0 +1,22 @@
+from models.db import db
+
+class Course(db.Model):
+
+    __tablename__ = "courses"
+
+    id = db.Column(
+        db.Integer,
+        primary_key=True
+    )
+
+    title = db.Column(
+        db.String(150)
+    )
+
+    skill = db.Column(
+        db.String(100)
+    )
+
+    link = db.Column(
+        db.String(255)
+    )

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SKI Chat</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+<div class="chat-header">
+
+<h1>🤖 SKI Assistant</h1>
+
+</div>
+
+<div id="chat-box"></div>
+
+<div class="chat-input">
+
+<input type="text" id="msg" placeholder="Digite sua mensagem...">
+
+<button onclick="sendMessage()">Enviar</button>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Perfil Skillia</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Skillia</h2>
+
+<a href="/dashboard">Dashboard</a>
+<a href="/profile">Perfil</a>
+
+<a href="/logout">
+Sair
+</a>
+
+</div>
+
+<div class="content">
+
+<h1>
+Meu Perfil
+</h1>
+
+<form
+action="/profile/save"
+method="POST">
+
+<label>Formação</label>
+
+<input
+type="text"
+name="education"
+value="{{ profile.education if profile else '' }}">
+
+<label>Experiência</label>
+
+<textarea
+name="experience">
+
+{{ profile.experience if profile else '' }}
+
+</textarea>
+
+<label>Skills</label>
+
+<textarea
+name="skills">
+
+{{ profile.skills if profile else '' }}
+
+</textarea>
+
+<button>
+Salvar Perfil
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
